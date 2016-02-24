@@ -129,26 +129,16 @@
           <block type="logic_compare" id="426" inline="true">
             <field name="OP">LT</field>
             <value name="A">
-              <block type="math_arithmetic" id="462" inline="true">
-                <field name="OP">DIVIDE</field>
+              <block type="math_arithmetic" id="454" inline="true">
+                <field name="OP">ADD</field>
                 <value name="A">
-                  <block type="math_arithmetic" id="454" inline="true">
-                    <field name="OP">ADD</field>
-                    <value name="A">
-                      <block type="sensor_object" id="338">
-                        <field name="OBJECT">RIGHTFRONT</field>
-                      </block>
-                    </value>
-                    <value name="B">
-                      <block type="sensor_object" id="371">
-                        <field name="OBJECT">LEFTFRONT</field>
-                      </block>
-                    </value>
+                  <block type="sensor_object" id="338">
+                    <field name="OBJECT">RIGHTFRONT</field>
                   </block>
                 </value>
                 <value name="B">
-                  <block type="math_number" id="463">
-                    <field name="NUM">100</field>
+                  <block type="sensor_object" id="371">
+                    <field name="OBJECT">LEFTFRONT</field>
                   </block>
                 </value>
               </block>
