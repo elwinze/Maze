@@ -10,8 +10,18 @@
       <block type="controls_if" id="110" inline="false">
         <mutation elseif="2" else="1"></mutation>
         <value name="IF0">
-          <block type="sensor_object" id="172">
-            <field name="OBJECT">LEFTFRONT</field>
+          <block type="logic_compare" id="424" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="172">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="425">
+                <field name="NUM">50</field>
+              </block>
+            </value>
           </block>
         </value>
         <statement name="DO0">
@@ -116,16 +126,26 @@
           </block>
         </statement>
         <value name="IF2">
-          <block type="math_bitwise" id="370" inline="true">
-            <field name="OP">AND</field>
+          <block type="logic_compare" id="426" inline="true">
+            <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="338">
-                <field name="OBJECT">RIGHTFRONT</field>
+              <block type="math_bitwise" id="370" inline="true">
+                <field name="OP">AND</field>
+                <value name="A">
+                  <block type="sensor_object" id="338">
+                    <field name="OBJECT">RIGHTFRONT</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="sensor_object" id="371">
+                    <field name="OBJECT">LEFTFRONT</field>
+                  </block>
+                </value>
               </block>
             </value>
             <value name="B">
-              <block type="sensor_object" id="371">
-                <field name="OBJECT">LEFTFRONT</field>
+              <block type="math_number" id="428">
+                <field name="NUM">50</field>
               </block>
             </value>
           </block>
