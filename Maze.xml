@@ -300,7 +300,27 @@
       </block>
     </statement>
     <next>
-      <block type="movement_stop" id="329"></block>
+      <block type="led_select" id="708" inline="true">
+        <field name="ACTION">OFF</field>
+        <value name="LED">
+          <block type="math_number" id="709">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="led_select" id="710" inline="true">
+            <field name="ACTION">OFF</field>
+            <value name="LED">
+              <block type="math_number" id="711">
+                <field name="NUM">5</field>
+              </block>
+            </value>
+            <next>
+              <block type="movement_stop" id="329"></block>
+            </next>
+          </block>
+        </next>
+      </block>
     </next>
   </block>
 </xml>
