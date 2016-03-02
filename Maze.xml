@@ -153,7 +153,7 @@
                 <field name="OP">LAND</field>
                 <value name="A">
                   <block type="sensor_object" id="33">
-                    <field name="OBJECT">LEFTSIDE</field>
+                    <field name="OBJECT">RIGHTFRONT</field>
                   </block>
                 </value>
                 <value name="B">
@@ -166,7 +166,7 @@
                     </value>
                     <value name="B">
                       <block type="sensor_object" id="92">
-                        <field name="OBJECT">LEFTFRONT</field>
+                        <field name="OBJECT">RIGHTFRONT</field>
                       </block>
                     </value>
                   </block>
