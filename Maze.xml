@@ -147,7 +147,7 @@
         </statement>
         <value name="IF2">
           <block type="logic_compare" id="32" inline="true">
-            <field name="OP">LT</field>
+            <field name="OP">GT</field>
             <value name="A">
               <block type="logic_operation" id="91" inline="true">
                 <field name="OP">LAND</field>
