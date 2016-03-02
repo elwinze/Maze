@@ -157,8 +157,18 @@
                   </block>
                 </value>
                 <value name="B">
-                  <block type="sensor_object" id="92">
-                    <field name="OBJECT">LEFTFRONT</field>
+                  <block type="logic_operation" id="108" inline="true">
+                    <field name="OP">LAND</field>
+                    <value name="A">
+                      <block type="sensor_object" id="124">
+                        <field name="OBJECT">REAR</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="sensor_object" id="92">
+                        <field name="OBJECT">LEFTFRONT</field>
+                      </block>
+                    </value>
                   </block>
                 </value>
               </block>
