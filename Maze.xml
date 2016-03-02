@@ -147,15 +147,25 @@
         </statement>
         <value name="IF2">
           <block type="logic_compare" id="32" inline="true">
-            <field name="OP">EQ</field>
+            <field name="OP">LT</field>
             <value name="A">
-              <block type="sensor_object" id="33">
-                <field name="OBJECT">LEFTSIDE</field>
+              <block type="logic_operation" id="91" inline="true">
+                <field name="OP">LAND</field>
+                <value name="A">
+                  <block type="sensor_object" id="33">
+                    <field name="OBJECT">LEFTSIDE</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="sensor_object" id="92">
+                    <field name="OBJECT">LEFTFRONT</field>
+                  </block>
+                </value>
               </block>
             </value>
             <value name="B">
               <block type="math_number" id="34">
-                <field name="NUM">100</field>
+                <field name="NUM">85</field>
               </block>
             </value>
           </block>
