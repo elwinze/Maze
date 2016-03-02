@@ -153,12 +153,12 @@
                 <field name="OP">AND</field>
                 <value name="A">
                   <block type="sensor_object" id="33">
-                    <field name="OBJECT">RIGHTFRONT</field>
+                    <field name="OBJECT">LEFTFRONT</field>
                   </block>
                 </value>
                 <value name="B">
                   <block type="sensor_object" id="84">
-                    <field name="OBJECT">RIGHTSIDE</field>
+                    <field name="OBJECT">LEFTSIDE</field>
                   </block>
                 </value>
               </block>
